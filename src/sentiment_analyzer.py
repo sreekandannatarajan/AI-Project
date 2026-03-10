@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[ ]:
 
 
 import transformers
@@ -20,7 +20,7 @@ sentiment_pipeline = pipeline(
 
 
 
-# In[7]:
+# In[ ]:
 
 
 import nest_asyncio
@@ -49,7 +49,7 @@ server = uvicorn.Server(config)
 await server.serve()
 
 
-# In[4]:
+# In[ ]:
 
 
 # Determine sentiment category based on model confidence scores
@@ -83,7 +83,7 @@ def convert_sentiment(label, confidence):
         }
 
 
-# In[3]:
+# In[ ]:
 
 
 def findsentiments(texts):
